@@ -1,4 +1,4 @@
-package com.sashakhyzhun.binaryconverter;
+package com.sashakhyzhun.binarybaseconverter;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
         TextView textResult = (TextView) findViewById(R.id.textResult);
         String str = (String) textResult.getText();
 
-        switch(mode){
+        switch(mode) {
             case BINARY:
                 textResult.setText(Long.toString(converter.converterBinaryToDecimal(str)));
                 break;

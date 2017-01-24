@@ -1,13 +1,13 @@
 <resources>
 
 
-    <string name="app_name">Binary Converter</string>
+    <string name="app_name">Binary Base Converter</string>
 
     <string name="textResult">0</string>
 
     <string name="buttonE">E</string>
     <string name="buttonF">F</string>
-    <string name="buttonBack">Back</string>
+    <string name="buttonBack">DEL</string>
 
     <string name="buttonA">A</string>
     <string name="buttonB">B</string>

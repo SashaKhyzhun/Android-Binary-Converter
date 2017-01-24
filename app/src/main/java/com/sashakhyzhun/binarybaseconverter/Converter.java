@@ -1,4 +1,4 @@
-package com.sashakhyzhun.binaryconverter;
+package com.sashakhyzhun.binarybaseconverter;
 
 import android.app.Activity;
 

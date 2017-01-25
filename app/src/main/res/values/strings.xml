@@ -31,7 +31,7 @@
 
     <string name="buttonReset">C</string>
     <string name="button0">0</string>
-    <string name="buttonHexadecimal">Hexadecimal</string>
+    <string name="buttonHexadecimal">Hex</string>
 
 
 </resources>

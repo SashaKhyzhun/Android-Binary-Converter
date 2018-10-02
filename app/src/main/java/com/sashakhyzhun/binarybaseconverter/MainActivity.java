@@ -1,4 +1,4 @@
-package com.sashakhyzhun.binaryconverter;
+package com.sashakhyzhun.binarybaseconverter;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -67,15 +67,15 @@ public class MainActivity extends Activity {
         TextView textResult = (TextView) findViewById(R.id.textResult);
         String str = (String) textResult.getText();
 
-        switch(mode){
+        switch(mode) {
             case BINARY:
-                textResult.setText(Long.toString(converter.converterBinaryParaDecimal(str)));
+                textResult.setText(Long.toString(converter.converterBinaryToDecimal(str)));
                 break;
             case OCTAL:
-                textResult.setText(Long.toString(converter.converterOctalParaDecimal(str)));
+                textResult.setText(Long.toString(converter.converterOctalToDecimal(str)));
                 break;
             case HEXADECIMAL:
-                textResult.setText(Long.toString(converter.converterHexadecimalParaDecimal(str)));
+                textResult.setText(Long.toString(converter.converterHexadecimalToDecimal(str)));
                 break;
         }
 
@@ -93,13 +93,13 @@ public class MainActivity extends Activity {
 
         switch (mode) {
             case DECIMAL:
-                textResult.setText(converter.converterDecimalParaBinary(Long.parseLong(str)));
+                textResult.setText(converter.converterDecimalToBinary(Long.parseLong(str)));
                 break;
             case OCTAL:
-                textResult.setText(converter.converterOctalParaBinary(str));
+                textResult.setText(converter.converterOctalToBinary(str));
                 break;
             case HEXADECIMAL:
-                textResult.setText(converter.converterHexadecimalParaBinary(str));
+                textResult.setText(converter.converterHexadecimalToBinary(str));
                 break;
         }
 
@@ -118,13 +118,13 @@ public class MainActivity extends Activity {
 
         switch (mode) {
             case BINARY:
-                textResult.setText(converter.converterBinaryParaOctal(str));
+                textResult.setText(converter.converterBinaryToOctal(str));
                 break;
             case DECIMAL:
-                textResult.setText(converter.converterDecimalParaOctal(Long.parseLong(str)));
+                textResult.setText(converter.converterDecimalToOctal(Long.parseLong(str)));
                 break;
             case HEXADECIMAL:
-                textResult.setText(converter.converterHexadecimalParaOctal(str));
+                textResult.setText(converter.converterHexadecimalToOctal(str));
                 break;
         }
 
@@ -143,13 +143,13 @@ public class MainActivity extends Activity {
 
         switch (mode) {
             case BINARY:
-                textResult.setText(converter.converterBinaryParaHexadecimal(str));
+                textResult.setText(converter.converterBinaryToHexadecimal(str));
                 break;
             case DECIMAL:
-                textResult.setText(converter.converterDecimalParaHexadecimal(Long.parseLong(str)));
+                textResult.setText(converter.converterDecimalToHexadecimal(Long.parseLong(str)));
                 break;
             case OCTAL:
-                textResult.setText(converter.converterOctalParaHexadecimal(str));
+                textResult.setText(converter.converterOctalToHexadecimal(str));
                 break;
         }
 

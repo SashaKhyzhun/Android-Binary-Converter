@@ -1,85 +1,98 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.48" >
+        android:layout_weight="0.48"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
 
         <TextView
             android:id="@+id/textResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:freezesText="true"
-            android:textSize="25sp"
+            android:textSize="35sp"
             android:text="@string/textResult" />
     </ScrollView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/buttonE"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/buttonE"
-            android:onClick="onClick" />
-
-        <Button
-            android:id="@+id/buttonF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"            
-            android:text="@string/buttonF"
-            android:onClick="onClick" />
-
-        <ImageButton
-            android:id="@+id/buttonBack"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-			android:text="@string/buttonBack"
-			android:src="@drawable/ic_action_back"
-			android:contentDescription="@string/buttonBack"
-            android:onClick="returnCharacter"
-            android:longClickable="true" />
-    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/bg_dark"
         android:orientation="horizontal" >
 
         <Button
             android:id="@+id/buttonA"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/buttonA" />
 
         <Button
             android:id="@+id/buttonB"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/buttonB" />
 
         <Button
             android:id="@+id/buttonC"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/buttonC" />
 
         <Button
             android:id="@+id/buttonD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/buttonD" />
+
+        <Button
+            android:id="@+id/buttonE"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
+            android:onClick="onClick"
+            android:text="@string/buttonE" />
+
+        <Button
+            android:id="@+id/buttonF"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
+            android:text="@string/buttonF"
+            android:onClick="onClick" />
+
+
     </LinearLayout>
 
 
@@ -91,31 +104,43 @@
         <Button
             android:id="@+id/button7"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/button7" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/button8" />
 
         <Button
             android:id="@+id/button9"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/button9" />
 
         <Button
-            android:id="@+id/buttonDecimal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="setDecimal"
-            android:text="@string/buttonDecimal"
-            android:textColor="#0000FF" />
+            android:id="@+id/buttonBinary"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:onClick="setBinary"
+            android:text="@string/buttonBinary"
+            android:background="@color/bg_light"
+            android:textColor="@color/white" />
+
     </LinearLayout>
 
 
@@ -127,31 +152,45 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/button4" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/button5" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/button6" />
 
+
         <Button
-            android:id="@+id/buttonBinary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="setBinary"
-            android:text="@string/buttonBinary"
-            android:textColor="#0000FF" />
+            android:id="@+id/buttonOctal"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:onClick="setOctal"
+            android:text="@string/buttonOctal"
+            android:background="@color/bg_light"
+            android:textColor="@color/white" />
+
+
     </LinearLayout>
 
 
@@ -163,31 +202,44 @@
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/button1" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/button2" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
             android:text="@string/button3" />
 
+
         <Button
-            android:id="@+id/buttonOctal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="setOctal"
-            android:text="@string/buttonOctal"
-            android:textColor="#0000FF" />
+            android:id="@+id/buttonDecimal"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:onClick="setDecimal"
+            android:text="@string/buttonDecimal"
+            android:background="@color/bg_light"
+            android:textColor="@color/white" />
+
     </LinearLayout>
 
 
@@ -197,27 +249,47 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/buttonReset"
+            android:id="@+id/buttonBack"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/buttonReset"
-            android:textColor="#FF0000"
-            android:onClick="clearTextView" />
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="@string/buttonBack"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"
+            android:contentDescription="@string/buttonBack"
+            android:onClick="returnCharacter"
+            android:longClickable="true" />
 
         <Button
             android:id="@+id/button0"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:text="@string/button0"
-        	android:onClick="onClick" />
+            android:onClick="onClick"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/button_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:background="@color/bg_dark"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/buttonHexadecimal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="1"
             android:text="@string/buttonHexadecimal"
-            android:textColor="#0000FF"
-            android:onClick="setHexadecimal" />
+            android:onClick="setHexadecimal"
+            android:background="@color/bg_light"
+            android:textColor="@color/white"/>
+
     </LinearLayout>
+
 
 </LinearLayout>

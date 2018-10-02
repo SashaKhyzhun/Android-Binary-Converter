@@ -1,4 +1,4 @@
-package com.sashakhyzhun.binaryconverter;
+package com.sashakhyzhun.binarybaseconverter;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.sashakhyzhun.binarycalculator", appContext.getPackageName());
+        assertEquals("com.sashakhyzhun.binarybasecalculator", appContext.getPackageName());
     }
 }
